@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+  --brown: #4A2E1F;
+  --gold: #C6A75E;
+  --bg: #F6F2ED;
+  --soft: #6B5B4D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--brown);
+}
+
+/* NAVIGATION */
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(246,242,237,0.97);
+  padding: 25px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(74,46,31,0.08);
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  letter-spacing: 6px;
+  font-weight: 700;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--brown);
+  margin-left: 35px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  padding: 150px 20px 120px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--soft);
+}
+
+/* SECTION */
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* PRODUCT GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border: 1px solid rgba(74,46,31,0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--soft);
+}
+
+/* ENQUIRY */
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(74,46,31,0.2);
+  font-size: 15px;
+}
+
+button {
+  padding: 14px;
+  background: var(--brown);
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--gold);
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--soft);
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.whatsapp img {
+  width: 20px;
+}
