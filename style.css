@@ -335,3 +335,42 @@ footer {
   letter-spacing: 6px;
   font-weight: 500;
 }
+/* ===== LUXURY STACKED NAVBAR ===== */
+
+.navbar {
+  text-align: center;
+  padding: 40px 0 20px;
+  border-bottom: 1px solid rgba(74,46,31,0.08);
+  background: var(--bg);
+}
+
+.nav-logo {
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 8px;
+  text-decoration: none;
+  color: var(--brown);
+}
+
+.nav-links {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 1200px;
+}
+
+.nav-links a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: var(--brown);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
