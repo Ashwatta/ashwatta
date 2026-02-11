@@ -120,3 +120,37 @@ footer {
 .whatsapp img {
   width: 18px;
 }
+/* LUXURY PRODUCT REFINEMENT */
+
+.category-block {
+  padding: 70px 0;
+  border-bottom: 1px solid rgba(74,46,31,0.06);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.category-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin: 0;
+  transition: 0.3s ease;
+}
+
+.category-block p {
+  margin-top: 12px;
+  font-size: 17px;
+  color: var(--soft);
+}
+
+.category-block:hover h3 {
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+.brand-line {
+  margin-top: 110px;
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+  color: #8a7a6d;
+}
