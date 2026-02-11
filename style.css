@@ -374,3 +374,47 @@ footer {
 .nav-links a:hover {
   color: var(--gold);
 }
+/* ===== BIG CENTER BRAND ===== */
+
+.brand-header {
+  text-align: center;
+  padding: 100px 20px 60px;
+  border-bottom: 1px solid rgba(74,46,31,0.08);
+}
+
+.brand-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 90px;
+  letter-spacing: 18px;
+  margin: 0;
+  color: var(--brown);
+}
+
+/* ===== OUR SERVICES SECTION ===== */
+
+.brand-nav {
+  text-align: center;
+  padding: 50px 20px 70px;
+}
+
+.service-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  color: var(--brown);
+}
+
+.service-links a {
+  margin: 0 25px;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--brown);
+  transition: 0.3s ease;
+}
+
+.service-links a:hover {
+  color: var(--gold);
+}
+
