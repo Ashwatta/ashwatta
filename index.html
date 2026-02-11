@@ -1,17 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ashwatta | Premium Corporate Gifting</title>
-<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --brown: #4A2E1F;
+  --gold: #C6A75E;
+  --bg: #F6F2ED;
+  --soft: #6B5B4D;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--brown);
+  scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(246,242,237,0.96);
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(74,46,31,0.1);
+  z-index: 1000;
+}
+
+nav h1 {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--brown);
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px;
+}
+
+.hero h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: var(--soft);
+}
+
+/* SECTION */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+/* CATEGORY STYLE */
+.category {
+  margin-bottom: 45px;
+}
+
+.category strong {
+  font-size: 18px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.category p {
+  margin-top: 5px;
+  color: var(--soft);
+  font-size: 14px;
+}
+
+/* GLOBAL LINE */
+.global-line {
+  margin-top: 60px;
+  text-align: center;
+  font-style: italic;
+  color: #7a6a5d;
+}
+
+/* ENQUIRY */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(74,46,31,0.2);
+  background: white;
+}
+
+button {
+  padding: 12px;
+  background: var(--brown);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--gold);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 14px;
+  color: var(--soft);
+}
+
+/* SMALL PREMIUM WHATSAPP BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.whatsapp img {
+  width: 18px;
+}
+</style>
 </head>
+
 <body>
 
 <nav>
   <h1>ASHWATTA</h1>
   <div>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Enquiry</a>
+    <a href="#products">Products</a>
+    <a href="#enquiry">Enquiry</a>
   </div>
 </nav>
 
@@ -20,22 +178,68 @@
   <p>Custom-branded, thoughtfully curated, refined in every detail.</p>
 </div>
 
-<div class="section">
-  <h2>Our Expertise</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Corporate Gifting</h3>
-      <p>Premium gifting solutions tailored for brands.</p>
-    </div>
-    <div class="card">
-      <h3>Festive Hampers</h3>
-      <p>Seasonal gifting, elevated with elegance.</p>
-    </div>
-    <div class="card">
-      <h3>Welcome Kits</h3>
-      <p>First impressions, thoughtfully designed.</p>
-    </div>
+<div class="section" id="products">
+  <h2>Product Categories</h2>
+
+  <div class="category">
+    <strong>Bespoke Crockery & Drinkware</strong>
+    <p>Crafted for refined corporate settings</p>
   </div>
+
+  <div class="category">
+    <strong>Executive Stationery & Desk Pieces</strong>
+    <p>Designed for discerning professionals</p>
+  </div>
+
+  <div class="category">
+    <strong>Company Badges & Brooches</strong>
+    <p>Defined by precision and restraint</p>
+  </div>
+
+  <div class="category">
+    <strong>Corporate Accessories</strong>
+    <p>Essential pieces, thoughtfully curated</p>
+  </div>
+
+  <div class="category">
+    <strong>Corporate Event & Return Gifts</strong>
+    <p>Composed for distinguished occasions</p>
+  </div>
+
+  <div class="category">
+    <strong>Festive Gift Boxes</strong>
+    <p>Curated expressions of celebration</p>
+  </div>
+
+  <div class="category">
+    <strong>Festive Hampers</strong>
+    <p>Seasonal gifting, elevated</p>
+  </div>
+
+  <div class="category">
+    <strong>Joining & Welcome Kits</strong>
+    <p>First impressions, considered</p>
+  </div>
+
+  <div class="category">
+    <strong>Uniform Design & Development (On Inquiry)</strong>
+    <p>An extension of brand identity</p>
+  </div>
+
+  <div class="global-line">
+    Bespoke corporate gifting, custom-branded in every detail.
+  </div>
+</div>
+
+<div class="section" id="enquiry">
+  <h2>Enquiry</h2>
+
+  <form action="mailto:poojarbaddam@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <textarea name="Requirement" rows="4" placeholder="Your Requirement"></textarea>
+    <button type="submit">Send Enquiry</button>
+  </form>
 </div>
 
 <footer>
@@ -43,7 +247,7 @@
 </footer>
 
 <a href="https://wa.me/918106990620" class="whatsapp" target="_blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
 
 </body>
