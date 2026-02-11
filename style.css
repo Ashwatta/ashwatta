@@ -154,3 +154,77 @@ footer {
   font-size: 16px;
   color: #8a7a6d;
 }
+/* ===== PREMIUM ENQUIRY ===== */
+
+.enquiry-box {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 50px;
+  border: 1px solid rgba(74,46,31,0.08);
+  background: white;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(74,46,31,0.3);
+  padding: 10px 0;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+}
+
+.form-group label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 14px;
+  color: var(--soft);
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label {
+  top: -12px;
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.premium-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--brown);
+  color: white;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.premium-btn:hover {
+  background: var(--gold);
+}
+
+.whatsapp-direct {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.whatsapp-direct a {
+  color: var(--brown);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.whatsapp-direct a:hover {
+  color: var(--gold);
+}
