@@ -512,4 +512,12 @@ footer {
   gap: 30px;
   margin: 20px 0 120px 0;
 }
+.category-block img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto;
+    border-radius: 4px;
+}
 
